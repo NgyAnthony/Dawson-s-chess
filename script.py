@@ -40,7 +40,7 @@ def select(board, n):
         valid_number = possible(board, n, number)
 
         if 0 < number <= n and valid_number:
-            print(number, "is valid.")
+            print("------------")
             number_is_invalid = False
             return number
         else:
@@ -88,6 +88,7 @@ def dawson(n):
     current_player = "Player 1"
 
     # Show the board and ask the player to select a number
+    print("------------")
     print("It's {}'s turn !".format(current_player))
     display(board, board_length)
     number = select(board, board_length)
